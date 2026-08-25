@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="增值税及附加税费申报表（一般纳税人适用）网页化表单" />
+  <title>增值税及附加税费申报表 · 2025.12</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-bar no-print">
+    <div class="brand-lockup">
+      <span class="brand-mark" aria-hidden="true">税</span>
+      <div>
+        <p class="eyebrow">TAX DESK / 12.2025</p>
+        <h1>增值税申报工作台</h1>
+      </div>
+    </div>
+    <div class="toolbar" aria-label="表单操作">
+      <span class="status"><i></i> 已从 PDF 建立</span>
+      <button type="button" class="tool-button" id="resetButton" title="恢复 PDF 中的原始数据"><span aria-hidden="true">↺</span>恢复原值</button>
+      <button type="button" class="tool-button primary" id="printButton" title="打印或导出 PDF"><span aria-hidden="true">↗</span>打印 / 导出</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <div class="workspace-heading no-print">
+      <div>
+        <p class="section-kicker">GENERAL VAT RETURN</p>
+        <h2>增值税及附加税费申报表</h2>
+      </div>
+      <div class="heading-meta"><span>所属期</span><strong>2025.12.01 — 2025.12.31</strong></div>
+    </div>
+
+    <section class="paper-wrap" aria-label="增值税及附加税费申报表">
+      <form class="tax-form" id="taxForm">
+        <div class="form-title">
+          <h2>增值税及附加税费申报表</h2>
+          <p>（一般纳税人适用）</p>
+        </div>
+        <p class="form-note">根据国家税收法律法规及增值税相关规定制定本表。纳税人不论有无销售额，均应按税务机关核定的纳税期限填写本表，并向当地税务机关申报。</p>
+        <div class="form-meta">
+          <div>税款所属时间：<input class="inline-input" value="自2025年12月1日至2025年12月31日" data-original="自2025年12月1日至2025年12月31日" /></div>
+          <div>填表日期：<input class="inline-input short" value="2026年1月15日" data-original="2026年1月15日" /></div>
+          <div>金额单位：元（列至角分）</div>
+        </div>
+        <div class="form-meta second-meta">
+          <div>纳税人识别号（统一社会信用代码）：<input class="inline-input code" value="91510922345790941Y" data-original="91510922345790941Y" /></div>
+          <div>所属行业（按统计分类）：<input class="inline-input industry" value="建筑业" data-original="建筑业" /></div>
+        </div>
+
+        <div class="party-grid">
+          <label>纳税人名称<input value="四川大清实业有限责任公司" data-original="四川大清实业有限责任公司" /></label>
+          <label>法定代表人姓名<input value="江虹" data-original="江虹" /></label>
+          <label>注册地址<input value="肿洪市大榕镇四川省遂宁市射洪市大榕镇洪州大道99号" data-original="肿洪市大榕镇四川省遂宁市射洪市大榕镇洪州大道99号" /></label>
+          <label>生产经营地址<input value="四川省遂宁市射洪市大榕镇洪州大道99号" data-original="四川省遂宁市射洪市大榕镇洪州大道99号" /></label>
+          <label>开户银行及账号<input value="遂宁商业银行股份有限公司射洪市安河江社区支行：5002724700019" data-original="遂宁商业银行股份有限公司射洪市安河江社区支行：5002724700019" /></label>
+          <label>登记注册类型<input value="其他有限责任公司" data-original="其他有限责任公司" /></label>
+          <label>电话号码<input value="15881928866" data-original="15881928866" /></label>
+        </div>
+
+        <div class="table-scroll">
+          <table class="return-table">
+            <colgroup><col class="category-col"><col class="item-col"><col class="index-col"><col><col><col><col></colgroup>
+            <thead>
+              <tr>
+                <th colspan="2" rowspan="2">项目</th>
+                <th rowspan="2">栏次</th>
+                <th colspan="2">一般项目</th>
+                <th colspan="2">即征即退项目</th>
+              </tr>
+              <tr><th>本月数</th><th>本年累计</th><th>本月数</th><th>本年累计</th></tr>
+            </thead>
+            <tbody id="returnRows"></tbody>
+          </table>
+        </div>
+
+        <div class="declaration">
+          <p><strong>声明：</strong>此表是根据国家税收法律法规及相关规定填写的，本人（单位）对填报内容（及附带资料）的真实性、可靠性、完整性负责。</p>
+          <div class="sign-line"><span>纳税人（签章）：</span><input class="sign-input" value="" aria-label="纳税人签章" /><span>年</span><input class="date-box" value="" aria-label="签章年份" /><span>月</span><input class="date-box" value="" aria-label="签章月份" /><span>日</span><input class="date-box" value="" aria-label="签章日期" /></div>
+        </div>
+        <div class="official-grid">
+          <div>经办人：<input value="王金凤" data-original="王金凤" /></div>
+          <div>受理人：<input value="15100xdzswj" data-original="15100xdzswj" /></div>
+          <div>经办人身份证号：<input value="510922*********522" data-original="510922*********522" /></div>
+          <div>受理税务机关（章）：<input value="国家税务总局射洪市税务局" data-original="国家税务总局射洪市税务局" /></div>
+          <div>代理机构签章：<input value="射洪市正易代理记账有限责任公司" data-original="射洪市正易代理记账有限责任公司" /></div>
+          <div>受理日期：<input value="2026年1月15日" data-original="2026年1月15日" /></div>
+          <div>代理机构统一社会信用代码：<input value="91510922MA67KU0G67" data-original="91510922MA67KU0G67" /></div>
+        </div>
+      </form>
+    </section>
+    <p class="page-caption no-print">本页为原 PDF 第一页的网页化复刻 · 可直接编辑金额、打印或导出为 PDF</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
