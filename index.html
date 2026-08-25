@@ -8,31 +8,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="app-bar no-print">
-    <div class="brand-lockup">
-      <span class="brand-mark" aria-hidden="true">税</span>
-      <div>
-        <p class="eyebrow">TAX DESK / 12.2025</p>
-        <h1>增值税申报工作台</h1>
-      </div>
-    </div>
-    <div class="toolbar" aria-label="表单操作">
-      <span class="status"><i></i> 已从 PDF 建立</span>
-      <button type="button" class="tool-button" id="resetButton" title="恢复 PDF 中的原始数据"><span aria-hidden="true">↺</span>恢复原值</button>
-      <button type="button" class="tool-button primary" id="printButton" title="打印或导出 PDF"><span aria-hidden="true">↗</span>打印 / 导出</button>
-    </div>
-  </header>
-
-  <main class="workspace">
-    <div class="workspace-heading no-print">
-      <div>
-        <p class="section-kicker">GENERAL VAT RETURN</p>
-        <h2>增值税及附加税费申报表</h2>
-      </div>
-      <div class="heading-meta"><span>所属期</span><strong>2025.12.01 — 2025.12.31</strong></div>
-    </div>
-
-    <section class="paper-wrap" aria-label="增值税及附加税费申报表">
+  <main>
+    <section aria-label="增值税及附加税费申报表">
       <form class="tax-form" id="taxForm">
         <div class="form-title">
           <h2>增值税及附加税费申报表</h2>
@@ -90,7 +67,6 @@
         </div>
       </form>
     </section>
-    <p class="page-caption no-print">本页为原 PDF 第一页的网页化复刻 · 可直接编辑金额、打印或导出为 PDF</p>
   </main>
 
   <script src="app.js"></script>

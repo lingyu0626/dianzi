@@ -71,8 +71,3 @@ function formatAmount(input) {
 document.querySelectorAll('.return-table input').forEach(input => {
   input.addEventListener('blur', () => formatAmount(input));
 });
-document.getElementById('printButton').addEventListener('click', () => window.print());
-document.getElementById('resetButton').addEventListener('click', () => {
-  document.querySelectorAll('[data-original]').forEach(input => { input.value = input.dataset.original; });
-  document.querySelectorAll('.return-table input[data-key]').forEach(input => { input.value = originalValues.get(input.dataset.key); });
-});
