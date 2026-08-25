@@ -3,7 +3,7 @@ html, body { margin: 0; padding: 0; background: #fff; color: #000; }
 body { font-family: "SimSun", "Songti SC", serif; font-size: 12px; }
 main, section { width: 100%; }
 .tax-form { width: 1088px; min-height: 1555px; margin: 0 auto; padding: 18px 22px 12px; }
-.form-switcher { display: flex; align-items: center; gap: 12px; height: 38px; margin: 0 -89px 0px; font-size: 14px; }
+.form-switcher { display: flex; align-items: center; gap: 12px; height: 38px; margin: 0 -96px 8px; font-size: 14px; }
 .form-switcher select { width: 370px; height: 38px; padding: 0 10px; border: 1px solid #c9c9c9; border-radius: 2px; background: #fff; color: #000; font-family: inherit; font-size: 14px; }
 .form-title { text-align: center; }
 .form-title h2 { margin: 0; font-size: 24px; font-weight: 700; }
